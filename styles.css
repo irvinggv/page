@@ -1,0 +1,205 @@
+/* Basic styling */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.navbar{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+
+}
+
+nav ul li a:hover{
+
+    color: rgb(133, 133, 133);
+
+} 
+
+#darkModeToggle {
+    
+    background-color: transparent; /* Make background transparent */
+    color: #000; /* Set text color */
+    padding: 12px 24px; /* Set padding */
+    border: none; /* Remove border */
+    cursor: pointer; /* Set cursor to pointer */
+    font-weight: bold; /* Set font weight */
+    font-size: 18px; /* Set font size to match other links */
+
+}
+
+#darkModeToggle:hover {
+    color: rgb(133, 133, 133); /* Change text color on hover */
+}
+
+img{
+    max-width: 8%;
+    height: auto;
+}
+
+/* Apply styles to the bio section */
+.bio {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Align items to the start of the flex container */
+    min-height: calc(100vh - 100px); /* Subtract navbar height from viewport height */
+    padding: 0 20px;
+}
+
+.bio-content{
+    flex: -1; /* Take up remaining space */
+    margin-right: 800px; /* Add margin to create space between bio content and image */
+}
+
+.bio-content span{
+    color: orange;
+}
+
+.bio-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive styling */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        height: auto; /* Adjust navbar height for smaller screens */
+    }
+    nav {
+        flex-direction: column; /* Stack navbar items vertically */
+        align-items: flex-start; /* Align items to the start */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+    nav ul {
+        padding-top: 10px; /* Add padding to the top of the ul */
+    }
+    nav ul li {
+        display: block;
+        margin-bottom: 10px; /* Add margin between navbar items */
+    }
+    nav ul li:last-child {
+        margin-bottom: 0; /* Remove margin from the last navbar item */
+    }
+    .bio img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* Dark mode */
+.dark {
+    background: #222;
+    color: #fff;
+}
+
+.dark #darkModeToggle {
+    color: #fff; /* Change button text color to white */
+}
+
+/* Dark mode for navigation bar buttons */
+.dark .navbar nav ul li a {
+    color: #fff; /* Change navigation bar button text color to white */
+}
+
+/* Styling for contact page */
+/* Apply styles to the contact section */
+.contact {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact li {
+    margin-bottom: 10px;
+}
+
+.contact a img {
+    width: 30px; /* Adjust the size of the Instagram logo */
+}
+
+.contact a {
+    text-decoration: none; /* Remove default underline */
+    color: inherit; /* Use the same color as the surrounding text */
+}
+.contact a:hover {
+   color:rgb(253, 149, 149)
+}
+
+
+
+/* Hobbies Page Styling */
+
+.hobbies {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.hobby-row {
+    margin-bottom: 150px;
+}
+
+.hobby-row h3 {
+    margin-bottom: 10px;
+}
+
+.hobby-images {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.hobby-images img {
+    width: 100%; /* Ensure the image fills its container */
+    height: auto; /* Allow the height to adjust automatically */
+    transform: scale(1.5); /* Enlarge the images by 1.5 times */
+    margin-bottom: 10px;
+}
+
+.hobby-row:nth-child(5) img {
+    transform: scale(4.0); /* Enlarge the images by 1.5 times */
+    height: auto;
+    object-fit: cover;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-style: italic;
+    color: #666;
+    margin-top: 5px;
+}

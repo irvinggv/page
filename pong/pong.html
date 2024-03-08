@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css"  href="pong.css">
+    <script src="pong.js"></script>
+</head>
+    <body onload = "startGame()">
+        <div style="display:flex; justify-content: space-around; font-size: 125px">
+            <span id="score1"></span><span id="score2"></span>
+        </div>
+        <div id="playerOnePaddle"></div>
+        <div id="gameBall"></div>
+        <div id="playerTwoPaddle"></div>
+
+         <!-- Winner message and restart button -->
+    <div id="winnerMessage"></div>
+    <button id="restartButton" onclick="startGame()" style="display:none;">Restart Game</button>
+
+
+</body>
+</html>
